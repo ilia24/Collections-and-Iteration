@@ -69,3 +69,8 @@ print aged
 
 fav_colors << "violet"
 fav_colors << "teal"
+
+phone = [[1, 2, 3], [4, 5, 6], [7, 8, 9], ["*", 0, "#"]]
+
+nums =*(1..50)
+print nums
