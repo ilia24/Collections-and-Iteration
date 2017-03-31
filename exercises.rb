@@ -9,16 +9,22 @@ fav_movies = {'pulp fiction' => 1994, 'memento' => 1995, 'scarface' => 1983}
 three_cities = {'toronto' => 2600000, 'detroit' => 680000, 'dubai' => 2700000}
 friend_ages = {'alex' => 21, 'millie' => 23, 'johnnie' => 21}
 
-print coin_flips
-print fav_colors[0]
-print ages.sort
-ages << 0
-print fav_movies['pulp fiction']
-
-
-print fav_colors.last
-three_cities['faketown'] = 2131
-coin_reverse = coin_flips.reverse
-print three_cities['toronto']
-
-artists.each { |artist| print "i think #{artist} is great!"}
+# print coin_flips
+# print fav_colors[0]
+# print ages.sort
+# ages << 0
+# print fav_movies['pulp fiction']
+#
+#
+# print fav_colors.last
+# three_cities['faketown'] = 2131
+# coin_reverse = coin_flips.reverse
+# print three_cities['toronto']
+# artists.each { |artist| print "i think #{artist} is great!"}
+#
+# artists.first(2)
+fav_movies.each { |movie, date| puts "#{movie} came out in #{date}"}
+fixedages = ages.sort.reverse
+print fixedages
+fav_movies["Beauty and the beast"] = [1991, 2017]
+print fav_movies
