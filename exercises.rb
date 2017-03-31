@@ -14,3 +14,11 @@ print fav_colors[0]
 print ages.sort
 ages << 0
 print fav_movies['pulp fiction']
+
+
+print fav_colors.last
+three_cities['faketown'] = 2131
+coin_reverse = coin_flips.reverse
+print three_cities['toronto']
+
+artists.each { |artist| print "i think #{artist} is great!"}
