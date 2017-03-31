@@ -36,15 +36,36 @@ friend_ages = {'alex' => 21, 'millie' => 23, 'johnnie' => 21}
 # end
 #
 # print ages.sort.last
-heads = 0
-coin_flips.each do |counter|
-  if counter == "heads"
-    heads += 1
+# heads = 0
+# coin_flips.each do |counter|
+#   if counter == "heads"
+#     heads += 1
+#   end
+# end
+# print "you flipped heads #{heads} times"
+#
+# artists.delete("john mayer")
+# print artists
+# three_cities['toronto'] = 25
+# print three_cities
+#
+total = 0
+three_cities.each do |city, popul|
+  total += popul
+end
+print "total population is #{total}"
+
+friend_ages.each do |name, age|
+  if age > 22
+    print "#{name} is old "
+  elsif age < 22
+    print "#{name} is young"
   end
 end
-print "you flipped heads #{heads} times"
+print fav_colors.last(2)
 
-artists.delete("john mayer")
-print artists
-three_cities['toronto'] = 25
-print three_cities
+aged = ages.map { |a| a += 1}
+print aged
+
+fav_colors << "violet"
+fav_colors << "teal"
