@@ -23,8 +23,28 @@ friend_ages = {'alex' => 21, 'millie' => 23, 'johnnie' => 21}
 # artists.each { |artist| print "i think #{artist} is great!"}
 #
 # artists.first(2)
-fav_movies.each { |movie, date| puts "#{movie} came out in #{date}"}
-fixedages = ages.sort.reverse
-print fixedages
-fav_movies["Beauty and the beast"] = [1991, 2017]
-print fav_movies
+# fav_movies.each { |movie, date| puts "#{movie} came out in #{date}"}
+# fixedages = ages.sort.reverse
+# print fixedages
+# fav_movies["Beauty and the beast"] = [1991, 2017]
+# print fav_movies
+
+# friend_ages.each do |friend, age|
+#   if age < 22
+#     print "#{friend} is #{age} years old"
+#   end
+# end
+#
+# print ages.sort.last
+heads = 0
+coin_flips.each do |counter|
+  if counter == "heads"
+    heads += 1
+  end
+end
+print "you flipped heads #{heads} times"
+
+artists.delete("john mayer")
+print artists
+three_cities['toronto'] = 25
+print three_cities
